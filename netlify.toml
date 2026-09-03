@@ -1,0 +1,3 @@
+[build]
+  base = "FitCircle/website"
+  publish = "."
