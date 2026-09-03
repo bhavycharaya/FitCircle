@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — FitCircle</title>
+  <meta name="description" content="FitCircle Privacy Policy — how we handle your family's fitness data." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="navbar scrolled" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="FitCircle home">
+        <div class="nav-logo-icon" aria-hidden="true">🏃</div>
+        <span class="gradient-text">FitCircle</span>
+      </a>
+      <div class="nav-actions">
+        <a href="index.html#download" class="btn btn-primary btn-sm">⬇ Download APK</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <h1>Privacy <span class="gradient-text">Policy</span></h1>
+      <p>Last updated: September 2026</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-content">
+
+      <p>FitCircle ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy explains what data we collect, how we use it, and how we protect it.</p>
+
+      <h2>1. Data We Collect</h2>
+      <p>When you use FitCircle, we collect:</p>
+      <ul>
+        <li><strong>Account information:</strong> Your email address, display name, and profile picture.</li>
+        <li><strong>Step data:</strong> Daily step counts, distance, and calories synced from your device.</li>
+        <li><strong>Exercise data:</strong> Workouts you manually log including type, duration, reps, and sets.</li>
+        <li><strong>Family data:</strong> Family name, family code, and the list of members in your circle.</li>
+        <li><strong>Usage data:</strong> Streak information, achievements, and challenge progress.</li>
+      </ul>
+
+      <h2>2. How We Use Your Data</h2>
+      <ul>
+        <li>To provide the FitCircle leaderboard and fitness tracking features.</li>
+        <li>To calculate your rank within your family circle.</li>
+        <li>To power the Overtake System — showing you exactly how many steps you need to move up.</li>
+        <li>To track streaks, achievements, and challenge progress.</li>
+        <li>To enable real-time leaderboard updates for your family.</li>
+      </ul>
+
+      <h2>3. Data Sharing</h2>
+      <p>Your fitness data is <strong>only visible to members of your family circle</strong>. We do not:</p>
+      <ul>
+        <li>Sell your data to third parties.</li>
+        <li>Share your data with advertisers.</li>
+        <li>Make your data publicly searchable.</li>
+        <li>Share individual workout notes with other family members.</li>
+      </ul>
+
+      <h2>4. Data Security</h2>
+      <p>FitCircle uses Supabase as its backend. All data is stored with Row Level Security (RLS) enforced at the database level. This means:</p>
+      <ul>
+        <li>You can only access data from your own family circle.</li>
+        <li>No other user can read, write, or modify your step records or workout data.</li>
+        <li>Security is enforced server-side, not just in the app.</li>
+      </ul>
+
+      <h2>5. Profile Pictures</h2>
+      <p>Profile pictures are stored in Supabase Storage. Only members of your family circle can view your profile picture. You can change or remove your profile picture at any time.</p>
+
+      <h2>6. Children's Privacy</h2>
+      <p>FitCircle is designed for family use and may be used by children under parental supervision. We do not knowingly collect data from children without parental consent. Parents should supervise the app's use by younger family members.</p>
+
+      <h2>7. Data Deletion</h2>
+      <p>You may request deletion of your account and all associated data at any time by contacting us via the GitHub repository. Account deletion removes all your step data, exercise records, and profile information from our systems.</p>
+
+      <h2>8. Third-Party Services</h2>
+      <p>FitCircle uses the following third-party services:</p>
+      <ul>
+        <li><strong>Supabase</strong> — Database, authentication, and storage. Subject to <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" style="color:var(--purple-light)">Supabase's Privacy Policy</a>.</li>
+      </ul>
+
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy as FitCircle evolves. We will communicate significant changes through the GitHub repository and the app.</p>
+
+      <h2>10. Contact</h2>
+      <p>For questions or data requests, please open an issue on our <a href="https://github.com/bhavycharaya/FitCircle" target="_blank" rel="noopener noreferrer" style="color:var(--purple-light)">GitHub repository</a>.</p>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer" role="contentinfo" style="margin-top: 0;">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 FitCircle · <a href="index.html" style="color:var(--purple-light)">Home</a></p>
+      <div class="footer-bottom-links">
+        <a href="https://github.com/bhavycharaya/FitCircle" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="index.html#download">Download</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script>
+  // Inject config values
+  document.querySelectorAll('[data-href]').forEach(el => {
+    const key = el.dataset.href;
+    if (window.FITCIRCLE_CONFIG && window.FITCIRCLE_CONFIG[key]) {
+      el.href = window.FITCIRCLE_CONFIG[key];
+    }
+  });
+  // Navbar scroll
+  const nav = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+</script>
+</body>
+</html>

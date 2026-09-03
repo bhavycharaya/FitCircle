@@ -1,0 +1,80 @@
+name: fitcircle
+description: FitCircle — Family Fitness & Step Leaderboard App
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── Supabase ─────────────────────────────────────────
+  supabase_flutter: ^2.3.0
+
+  # ── State Management ──────────────────────────────────
+  provider: ^6.1.1
+
+  # ── Navigation ───────────────────────────────────────
+  go_router: ^13.2.0
+
+  # ── Step Tracking ────────────────────────────────────
+  pedometer: ^4.0.0
+  permission_handler: ^11.3.0
+
+  # ── Charts ────────────────────────────────────────────
+  fl_chart: ^0.68.0
+
+  # ── Image Picker (for profile picture) ────────────────
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.1
+
+  # ── Local Storage / Cache ─────────────────────────────
+  shared_preferences: ^2.2.3
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+
+  # ── Env Variables ────────────────────────────────────
+  flutter_dotenv: ^5.1.0
+
+  # ── Utilities ────────────────────────────────────────
+  intl: ^0.19.0
+  uuid: ^4.3.3
+  connectivity_plus: ^6.0.3
+
+  # ── UI ────────────────────────────────────────────────
+  flutter_animate: ^4.5.0
+  google_fonts: ^6.2.1
+  phosphor_flutter: ^2.0.1
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/images/
+
+  fonts:
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/Outfit-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Outfit-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Outfit-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Outfit-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Outfit-ExtraBold.ttf
+          weight: 800
