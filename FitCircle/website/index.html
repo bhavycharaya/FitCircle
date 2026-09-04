@@ -1,519 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>FitCircle — Move Together. Stay Fit Together.</title>
-  <meta name="description" content="FitCircle is a family fitness app where you track steps, compete on a family leaderboard, and always know exactly how many steps you need to overtake the person above you." />
-  <meta name="keywords" content="FitCircle, family fitness app, step tracker, leaderboard, Android app, family challenge" />
-  <meta name="author" content="FitCircle" />
-  <meta property="og:title" content="FitCircle — Move Together. Stay Fit Together." />
-  <meta property="og:description" content="Track your steps, challenge your family, climb the leaderboard and stay active together." />
-  <meta property="og:type" content="website" />
-
-  <!-- Favicon (emoji fallback) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>" />
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitCircle — Move Together. Stay Fit Together.</title>
+<meta name="description" content="FitCircle is a family fitness app where you track steps, compete on a family leaderboard, and stay active together.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- ============================================================
-     NAVIGATION
-     ============================================================ -->
 <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-  <div class="container">
-    <div class="nav-inner">
-
-      <a href="#hero" class="nav-logo" id="nav-logo-link" aria-label="FitCircle home">
-        <div class="nav-logo-icon" aria-hidden="true">🏃</div>
-        <span class="gradient-text">FitCircle</span>
-      </a>
-
-      <ul class="nav-links" role="list">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#download">Download</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <a href="#" id="nav-github-btn" data-href="GITHUB_REPOSITORY_URL"
-           class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer"
-           aria-label="View on GitHub">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-          </svg>
-          GitHub
-        </a>
-        <a href="#" id="nav-download-btn" data-href="APK_DOWNLOAD_URL"
-           class="btn btn-primary btn-sm"
-           aria-label="Download FitCircle APK">
-          ⬇ Download APK
-        </a>
-      </div>
-
-      <!-- Hamburger -->
-      <button class="hamburger" id="menuOpen" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-    </div>
-  </div>
+<div class="container"><div class="nav-inner">
+<a href="#hero" class="nav-logo" aria-label="FitCircle home"><div class="nav-logo-icon">🏃</div><span class="gradient-text">FitCircle</span></a>
+<ul class="nav-links" role="list">
+<li><a href="#features">Features</a></li><li><a href="#how-it-works">How It Works</a></li><li><a href="#download">Download</a></li><li><a href="#faq">FAQ</a></li><li><a href="privacy.html">Privacy</a></li>
+</ul>
+<div class="nav-actions">
+<a href="https://github.com/bhavycharaya/FitCircle" data-href="https://github.com/bhavycharaya/FitCircle" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="https://github.com/bhavycharaya/FitCircle/releases/download/v1.0.0/app-release.apk" data-href="https://github.com/bhavycharaya/FitCircle/releases/download/v1.0.0/app-release.apk" class="btn btn-primary btn-sm">⬇ Download APK</a>
+</div>
+<button class="hamburger" id="menuOpen" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></div>
 </nav>
 
-<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
-  <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">✕</button>
-  <a href="#features">Features</a>
-  <a href="#how-it-works">How It Works</a>
-  <a href="#download">Download</a>
-  <a href="#faq">FAQ</a>
-  <a href="privacy.html">Privacy</a>
-  <a href="#" data-href="GITHUB_REPOSITORY_URL" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-  <a href="#" data-href="APK_DOWNLOAD_URL" class="btn btn-primary">⬇ Download APK</a>
+<button class="mobile-menu-close" id="menuClose" aria-label="Close menu">✕</button>
+<a href="#features">Features</a><a href="#how-it-works">How It Works</a><a href="#download">Download</a><a href="#faq">FAQ</a><a href="privacy.html">Privacy</a>
+<a href="https://github.com/bhavycharaya/FitCircle" data-href="https://github.com/bhavycharaya/FitCircle" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<a href="https://github.com/bhavycharaya/FitCircle/releases/download/v1.0.0/app-release.apk" data-href="https://github.com/bhavycharaya/FitCircle/releases/download/v1.0.0/app-release.apk" class="btn btn-primary">⬇ Download APK</a>
 </div>
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
 <section class="hero" id="hero" aria-labelledby="hero-heading">
-  <div class="hero-bg" aria-hidden="true">
-    <div class="hero-glow hero-glow-1"></div>
-    <div class="hero-glow hero-glow-2"></div>
-  </div>
-
-  <div class="container">
-    <div class="hero-grid">
-
-      <!-- Left: Copy -->
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span class="badge" role="note">🏃 Family Fitness App · Android</span>
-        </div>
-
-        <h1 class="hero-title" id="hero-heading">
-          <span class="gradient-text">FitCircle</span>
-        </h1>
-
-        <p class="hero-tagline">Move Together. Stay Fit Together.</p>
-
-        <p class="hero-description">
-          Track your steps, challenge your family, climb the leaderboard,
-          and stay active together. Always know exactly how many steps you
-          need to overtake the person ahead of you.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#" id="hero-download-btn" data-href="APK_DOWNLOAD_URL"
-             class="btn btn-primary btn-lg" aria-label="Download FitCircle APK">
-            ⬇ Download APK
-          </a>
-          <a href="#" id="hero-github-btn" data-href="GITHUB_REPOSITORY_URL"
-             class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer"
-             aria-label="View FitCircle on GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-            </svg>
-            View on GitHub
-          </a>
-        </div>
-
-        <div class="hero-stats" aria-label="App statistics">
-          <div class="hero-stat">
-            <div class="hero-stat-number gradient-text">10K+</div>
-            <div class="hero-stat-label">Daily Steps Tracked</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number gradient-text">v<span data-config="APP_VERSION">1.0.0</span></div>
-            <div class="hero-stat-label">Latest Version</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number gradient-text">100%</div>
-            <div class="hero-stat-label">Family Fun</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: Live Overtake Demo -->
-      <div class="hero-visual" aria-label="App preview" aria-hidden="true">
-        <div class="overtake-card">
-          <p style="font-size:12px; color: var(--text-muted); margin-bottom:12px; font-family:'Outfit',sans-serif; font-weight:600; letter-spacing:1px; text-transform:uppercase;">Live Demo — Family Leaderboard</p>
-
-          <div class="leaderboard-preview">
-            <div class="lb-row">
-              <span class="lb-rank">🥇</span>
-              <span class="lb-name">Dad</span>
-              <span class="lb-steps">12,060 steps</span>
-            </div>
-            <div class="lb-row you">
-              <span class="lb-rank">🥈</span>
-              <span class="lb-name">You (Bhavy)</span>
-              <span class="lb-steps">10,820 steps</span>
-            </div>
-            <div class="lb-row">
-              <span class="lb-rank">🥉</span>
-              <span class="lb-name">Mom</span>
-              <span class="lb-steps">9,540 steps</span>
-            </div>
-            <div class="lb-row">
-              <span class="lb-rank">4</span>
-              <span class="lb-name">Brother</span>
-              <span class="lb-steps">8,210 steps</span>
-            </div>
-          </div>
-
-          <div class="overtake-message" id="overtake-message-demo">
-            🔥 Only <span id="overtakeSteps">1,241</span> steps to overtake Dad!
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+<div class="hero-bg" aria-hidden="true"><div class="hero-glow hero-glow-1"></div><div class="hero-glow hero-glow-2"></div></div>
+<div class="container"><div class="hero-grid">
+<div class="hero-content">
+<div class="hero-eyebrow"><span class="badge">🏃 Family Fitness App · Android</span></div>
+<h1 class="hero-title" id="hero-heading"><span class="gradient-text">FitCircle</span></h1>
+<p class="hero-tagline">Move Together. Stay Fit Together.</p>
+<p class="hero-description">Track your steps, challenge your family, climb the leaderboard, and stay active together. Always know exactly how many steps you need to overtake the person ahead of you.</p>
+<div class="hero-actions">
+<a href="https://github.com/bhavycharaya/FitCircle/releases/download/v1.0.0/app-release.apk" data-href="https://github.com/bhavycharaya/FitCircle/releases/download/v1.0.0/app-release.apk" class="btn btn-primary btn-lg">⬇ Download APK</a>
+<a href="https://github.com/bhavycharaya/FitCircle" data-href="https://github.com/bhavycharaya/FitCircle" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+</div>
+<div class="hero-stats"><div class="hero-stat"><div class="hero-stat-number gradient-text">10K+</div><div class="hero-stat-label">Daily Steps Tracked</div></div><div class="hero-stat"><div class="hero-stat-number gradient-text">v<span data-config="APP_VERSION">1.0.0</span></div><div class="hero-stat-label">Latest Version</div></div><div class="hero-stat"><div class="hero-stat-number gradient-text">100%</div><div class="hero-stat-label">Family Fun</div></div></div>
+</div>
+<div class="hero-visual" aria-label="App preview" aria-hidden="true"><div class="overtake-card">
+<p style="font-size:12px;color:var(--text-muted);margin-bottom:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;">Live Demo — Family Leaderboard</p>
+<div class="leaderboard-preview">
+<div class="lb-row"><span class="lb-rank">🥇</span><span class="lb-name">Dad</span><span class="lb-steps">12,060 steps</span></div>
+<div class="lb-row you"><span class="lb-rank">🥈</span><span class="lb-name">You (Bhavy)</span><span class="lb-steps">10,820 steps</span></div>
+<div class="lb-row"><span class="lb-rank">🥉</span><span class="lb-name">Mom</span><span class="lb-steps">9,540 steps</span></div>
+<div class="lb-row"><span class="lb-rank">4</span><span class="lb-name">Brother</span><span class="lb-steps">8,210 steps</span></div>
+</div>
+<div class="overtake-message" id="overtake-message-demo">🔥 Only <span id="overtakeSteps">1,241</span> steps to overtake Dad!</div>
+</div></div>
+</div></div>
 </section>
 
-<!-- ============================================================
-     FEATURES
-     ============================================================ -->
-<section class="features" id="features" aria-labelledby="features-heading">
-  <div class="container">
-    <div class="features-header reveal">
-      <span class="section-label">What Makes FitCircle Special</span>
-      <h2 class="section-title" id="features-heading">Everything your family needs<br>to <span class="gradient-text">stay active together</span></h2>
-      <p class="section-subtitle">From step tracking to family challenges — FitCircle keeps everyone moving and motivated.</p>
-    </div>
+<section class="features" id="features" aria-labelledby="features-heading"><div class="container">
+<div class="features-header reveal"><span class="section-label">What Makes FitCircle Special</span><h2 class="section-title" id="features-heading">Everything your family needs<br>to <span class="gradient-text">stay active together</span></h2><p class="section-subtitle">From step tracking to family challenges — FitCircle keeps everyone moving and motivated.</p></div>
+<div class="features-grid">
+<article class="feature-card reveal"><div class="feature-icon">👟</div><h3 class="feature-title">Step Tracking</h3><p class="feature-desc">Real-time Android step tracking. Your steps sync automatically to FitCircle. Manual entry available as a fallback — your progress is never lost.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">🏆</div><h3 class="feature-title">Family Leaderboard</h3><p class="feature-desc">See where every family member stands right now. Daily, weekly, monthly and all-time rankings. The leaderboard updates in real time.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">⚡</div><h3 class="feature-title">Overtake System</h3><p class="feature-desc">The signature FitCircle feature. Always know the <em>exact</em> number of steps needed to overtake the person above you.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">💪</div><h3 class="feature-title">Exercise Logging</h3><p class="feature-desc">Log 12 exercise types — running, cycling, push-ups, yoga and more. Track duration, reps, sets and distance.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">🎯</div><h3 class="feature-title">Family Challenges</h3><p class="feature-desc">Combined step goals, monthly challenges, most-exercise competitions. Work together or compete.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">🔥</div><h3 class="feature-title">Daily Streaks</h3><p class="feature-desc">Build momentum with daily goal streaks. FitCircle tracks your current streak and best streak.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">🎖️</div><h3 class="feature-title">Achievements</h3><p class="feature-desc">Unlock milestones like 10K Club, 7 Day Warrior, Overtaker and Family Champion.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">📡</div><h3 class="feature-title">Real-Time Updates</h3><p class="feature-desc">Powered by Supabase Realtime. Family leaderboard updates automatically.</p></article>
+</div></div></section>
 
-    <div class="features-grid">
+<section class="preview" id="preview" aria-labelledby="preview-heading"><div class="container">
+<div class="preview-header reveal"><span class="section-label">See It In Action</span><h2 class="section-title" id="preview-heading">Your family's fitness,<br><span class="gradient-text">beautifully organized</span></h2></div>
+<div class="preview-image-wrap reveal"><img src="assets/images/app-mockup.jpg" alt="FitCircle app showing the home dashboard with step progress ring and family leaderboard" loading="lazy" width="900" height="506"></div>
+</div></section>
 
-      <article class="feature-card reveal" aria-labelledby="feature-steps">
-        <div class="feature-icon" aria-hidden="true">👟</div>
-        <h3 class="feature-title" id="feature-steps">Step Tracking</h3>
-        <p class="feature-desc">Real-time Android step tracking. Your steps sync automatically to FitCircle. Manual entry available as a fallback — your progress is never lost.</p>
-      </article>
+<section class="how-it-works" id="how-it-works" aria-labelledby="how-heading"><div class="container">
+<div class="how-header reveal"><span class="section-label">Getting Started</span><h2 class="section-title" id="how-heading">From download to <span class="gradient-text">family leaderboard</span><br>in minutes</h2></div>
+<div class="steps-grid">
+<div class="step-card reveal"><div class="step-number">1</div><div><p class="step-title">Download the APK</p><p class="step-desc">Click Download APK. The file downloads directly from GitHub Releases.</p></div></div>
+<div class="step-card reveal"><div class="step-number">2</div><div><p class="step-title">Install FitCircle</p><p class="step-desc">Open the downloaded file and tap Install.</p></div></div>
+<div class="step-card reveal"><div class="step-number">3</div><div><p class="step-title">Create Your Account</p><p class="step-desc">Sign up with your email address and set your profile.</p></div></div>
+<div class="step-card reveal"><div class="step-number">4</div><div><p class="step-title">Create or Join a Circle</p><p class="step-desc">Create a family circle or join one using its unique code.</p></div></div>
+<div class="step-card reveal"><div class="step-number">5</div><div><p class="step-title">Allow Step Tracking</p><p class="step-desc">Grant activity permission so FitCircle can track steps automatically.</p></div></div>
+<div class="step-card reveal"><div class="step-number">6</div><div><p class="step-title">Start Walking!</p><p class="step-desc">Your steps sync to the family leaderboard. Walk more and climb the ranks.</p></div></div>
+</div></div></section>
 
-      <article class="feature-card reveal" aria-labelledby="feature-leaderboard">
-        <div class="feature-icon" aria-hidden="true">🏆</div>
-        <h3 class="feature-title" id="feature-leaderboard">Family Leaderboard</h3>
-        <p class="feature-desc">See where every family member stands right now. Daily, weekly, monthly and all-time rankings. The leaderboard updates in real time.</p>
-      </article>
+<section class="download" id="download" aria-labelledby="download-heading"><div class="container"><div class="download-inner reveal">
+<div class="download-version-badge"><span>●</span> Latest Release · v<span data-config="APP_VERSION">1.0.0</span></div>
+<h2 class="download-title" id="download-heading">Get <span class="gradient-text">FitCircle</span></h2>
+<p class="download-subtitle">Free to download. Your family fitness journey starts today.</p>
+<div class="download-actions">
+<a href="https://github.com/bhavycharaya/FitCircle/releases/download/v1.0.0/app-release.apk" data-href="https://github.com/bhavycharaya/FitCircle/releases/download/v1.0.0/app-release.apk" class="btn btn-primary btn-lg">⬇ Download APK</a>
+<a href="https://github.com/bhavycharaya/FitCircle" data-href="https://github.com/bhavycharaya/FitCircle" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+</div>
+<div class="android-badge">🤖 Requires <span data-config="MIN_ANDROID_VERSION">Android 8.0+</span></div>
+<p class="download-note" style="margin-top:16px;">All releases are available on <a href="https://github.com/bhavycharaya/FitCircle/releases" data-href="https://github.com/bhavycharaya/FitCircle/releases" target="_blank" rel="noopener noreferrer">GitHub Releases ↗</a></p>
+</div></div></section>
 
-      <article class="feature-card reveal" aria-labelledby="feature-overtake">
-        <div class="feature-icon" aria-hidden="true">⚡</div>
-        <h3 class="feature-title" id="feature-overtake">Overtake System</h3>
-        <p class="feature-desc">The signature FitCircle feature. Always know the <em>exact</em> number of steps needed to overtake the person above you. Get a celebration when you do.</p>
-      </article>
+<section class="faq" id="faq" aria-labelledby="faq-heading"><div class="container">
+<div class="faq-header reveal"><span class="section-label">Questions</span><h2 class="section-title" id="faq-heading">Frequently asked <span class="gradient-text">questions</span></h2></div>
+<div class="faq-list" role="list">
+<div class="faq-item reveal"><button class="faq-question" aria-expanded="false" id="faq-q1" aria-controls="faq-a1">Is FitCircle free?<span class="faq-icon">+</span></button><div class="faq-answer" id="faq-a1"><p class="faq-answer-inner">Yes — FitCircle is completely free to download and use.</p></div></div>
+<div class="faq-item reveal"><button class="faq-question" aria-expanded="false" id="faq-q2" aria-controls="faq-a2">Which Android version is required?<span class="faq-icon">+</span></button><div class="faq-answer" id="faq-a2"><p class="faq-answer-inner">FitCircle requires Android 8.0 (Oreo) or later.</p></div></div>
+<div class="faq-item reveal"><button class="faq-question" aria-expanded="false" id="faq-q3" aria-controls="faq-a3">How does the Overtake System work?<span class="faq-icon">+</span></button><div class="faq-answer" id="faq-a3"><p class="faq-answer-inner">FitCircle finds the person directly above you and calculates the exact number of extra steps needed to overtake them.</p></div></div>
+<div class="faq-item reveal"><button class="faq-question" aria-expanded="false" id="faq-q4" aria-controls="faq-a4">How do I add my family members?<span class="faq-icon">+</span></button><div class="faq-answer" id="faq-a4"><p class="faq-answer-inner">Create a family circle, share its unique code, and family members can enter that code to join.</p></div></div>
+<div class="faq-item reveal"><button class="faq-question" aria-expanded="false" id="faq-q5" aria-controls="faq-a5">Does it track steps automatically?<span class="faq-icon">+</span></button><div class="faq-answer" id="faq-a5"><p class="faq-answer-inner">Yes. FitCircle uses the Android step counter sensor. Manual entry is available as a fallback.</p></div></div>
+<div class="faq-item reveal"><button class="faq-question" aria-expanded="false" id="faq-q6" aria-controls="faq-a6">Is my data private?<span class="faq-icon">+</span></button><div class="faq-answer" id="faq-a6"><p class="faq-answer-inner">Fitness data is restricted to family-circle members using Supabase Row Level Security. See our <a href="privacy.html">Privacy Policy</a> for details.</p></div></div>
+<div class="faq-item reveal"><button class="faq-question" aria-expanded="false" id="faq-q7" aria-controls="faq-a7">Where can I find the source code?<span class="faq-icon">+</span></button><div class="faq-answer" id="faq-a7"><p class="faq-answer-inner">The complete FitCircle source code is available on <a href="https://github.com/bhavycharaya/FitCircle" target="_blank" rel="noopener noreferrer">GitHub ↗</a>.</p></div></div>
+</div></div></section>
 
-      <article class="feature-card reveal" aria-labelledby="feature-exercise">
-        <div class="feature-icon" aria-hidden="true">💪</div>
-        <h3 class="feature-title" id="feature-exercise">Exercise Logging</h3>
-        <p class="feature-desc">Log 12 exercise types — running, cycling, push-ups, yoga and more. Track duration, reps, sets and distance. Review your complete history.</p>
-      </article>
+<footer class="footer"><div class="container"><div class="footer-grid">
+<div class="footer-brand"><a href="#hero" class="nav-logo"><div class="nav-logo-icon">🏃</div><span class="gradient-text">FitCircle</span></a><p>A family fitness app that makes walking a friendly competition.</p></div>
+<nav class="footer-col"><p class="footer-col-title">App</p><ul><li><a href="#download">Download APK</a></li><li><a href="https://github.com/bhavycharaya/FitCircle/releases" target="_blank" rel="noopener noreferrer">All Releases</a></li><li><a href="#how-it-works">How to Install</a></li></ul></nav>
+<nav class="footer-col"><p class="footer-col-title">Project</p><ul><li><a href="https://github.com/bhavycharaya/FitCircle" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li><li><a href="#features">Features</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+<nav class="footer-col"><p class="footer-col-title">Legal</p><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="#faq">Contact</a></li></ul></nav>
+</div>
+<div class="footer-bottom"><p>© 2026 FitCircle · Built with Flutter &amp; Supabase · v<span data-config="APP_VERSION">1.0.0</span></p><div class="footer-bottom-links"><a href="https://github.com/bhavycharaya/FitCircle" target="_blank" rel="noopener noreferrer">GitHub</a><a href="privacy.html">Privacy</a><a href="#download">Download</a></div></div>
+</div></footer>
 
-      <article class="feature-card reveal" aria-labelledby="feature-challenges">
-        <div class="feature-icon" aria-hidden="true">🎯</div>
-        <h3 class="feature-title" id="feature-challenges">Family Challenges</h3>
-        <p class="feature-desc">Combined step goals, monthly challenges, most-exercise competitions. Work together or compete — FitCircle supports both.</p>
-      </article>
-
-      <article class="feature-card reveal" aria-labelledby="feature-streaks">
-        <div class="feature-icon" aria-hidden="true">🔥</div>
-        <h3 class="feature-title" id="feature-streaks">Daily Streaks</h3>
-        <p class="feature-desc">Build momentum with daily goal streaks. FitCircle tracks your current streak, your best streak and your completed days this month.</p>
-      </article>
-
-      <article class="feature-card reveal" aria-labelledby="feature-achievements">
-        <div class="feature-icon" aria-hidden="true">🎖️</div>
-        <h3 class="feature-title" id="feature-achievements">Achievements</h3>
-        <p class="feature-desc">Unlock milestones like 10K Club, 7 Day Warrior, Overtaker and Family Champion. Nine achievements to collect — all earned through real activity.</p>
-      </article>
-
-      <article class="feature-card reveal" aria-labelledby="feature-realtime">
-        <div class="feature-icon" aria-hidden="true">📡</div>
-        <h3 class="feature-title" id="feature-realtime">Real-Time Updates</h3>
-        <p class="feature-desc">Powered by Supabase Realtime. When a family member walks, everyone's leaderboard updates automatically. No manual refresh required.</p>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     APP PREVIEW
-     ============================================================ -->
-<section class="preview" id="preview" aria-labelledby="preview-heading">
-  <div class="container">
-    <div class="preview-header reveal">
-      <span class="section-label">See It In Action</span>
-      <h2 class="section-title" id="preview-heading">Your family's fitness,<br><span class="gradient-text">beautifully organized</span></h2>
-    </div>
-    <div class="preview-image-wrap reveal">
-      <img src="assets/images/app-mockup.jpg"
-           alt="FitCircle app showing the home dashboard with step progress ring and family leaderboard"
-           loading="lazy"
-           width="900" height="506" />
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     HOW IT WORKS
-     ============================================================ -->
-<section class="how-it-works" id="how-it-works" aria-labelledby="how-heading">
-  <div class="container">
-    <div class="how-header reveal">
-      <span class="section-label">Getting Started</span>
-      <h2 class="section-title" id="how-heading">From download to <span class="gradient-text">family leaderboard</span><br>in minutes</h2>
-    </div>
-
-    <div class="steps-grid">
-
-      <div class="step-card reveal">
-        <div class="step-number" aria-label="Step 1">1</div>
-        <div>
-          <p class="step-title">Download the APK</p>
-          <p class="step-desc">Click the Download APK button. The file downloads directly to your Android device from GitHub Releases.</p>
-        </div>
-      </div>
-
-      <div class="step-card reveal">
-        <div class="step-number" aria-label="Step 2">2</div>
-        <div>
-          <p class="step-title">Install FitCircle</p>
-          <p class="step-desc">Open the downloaded file. If Android asks to allow installs from this source, enable it. Then tap Install.</p>
-        </div>
-      </div>
-
-      <div class="step-card reveal">
-        <div class="step-number" aria-label="Step 3">3</div>
-        <div>
-          <p class="step-title">Create Your Account</p>
-          <p class="step-desc">Sign up with your email address. Set your name, profile picture and your personal daily step goal.</p>
-        </div>
-      </div>
-
-      <div class="step-card reveal">
-        <div class="step-number" aria-label="Step 4">4</div>
-        <div>
-          <p class="step-title">Create or Join a Circle</p>
-          <p class="step-desc">Create a family circle and share your unique code (like FIT-7K92X). Or enter a code to join an existing family.</p>
-        </div>
-      </div>
-
-      <div class="step-card reveal">
-        <div class="step-number" aria-label="Step 5">5</div>
-        <div>
-          <p class="step-title">Allow Step Tracking</p>
-          <p class="step-desc">Grant the activity permission so FitCircle can track your steps automatically throughout the day.</p>
-        </div>
-      </div>
-
-      <div class="step-card reveal">
-        <div class="step-number" aria-label="Step 6">6</div>
-        <div>
-          <p class="step-title">Start Walking!</p>
-          <p class="step-desc">Your steps sync to the family leaderboard. Walk more to climb the ranks. FitCircle tells you exactly how close you are to overtaking the person above you.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     DOWNLOAD
-     ============================================================ -->
-<section class="download" id="download" aria-labelledby="download-heading">
-  <div class="container">
-    <div class="download-inner reveal">
-
-      <div class="download-version-badge" role="status" aria-live="polite">
-        <span>●</span>
-        Latest Release · v<span data-config="APP_VERSION">1.0.0</span>
-      </div>
-
-      <h2 class="download-title" id="download-heading">
-        Get <span class="gradient-text">FitCircle</span>
-      </h2>
-
-      <p class="download-subtitle">
-        Free to download. Your family fitness journey starts today.
-      </p>
-
-      <div class="download-actions">
-        <a href="#" id="main-download-btn" data-href="APK_DOWNLOAD_URL"
-           class="btn btn-primary btn-lg"
-           aria-label="Download FitCircle APK version 1.0.0 for Android">
-          ⬇ Download APK
-        </a>
-        <a href="#" id="main-github-btn" data-href="GITHUB_REPOSITORY_URL"
-           class="btn btn-secondary btn-lg"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="View FitCircle source code on GitHub">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-          </svg>
-          View on GitHub
-        </a>
-      </div>
-
-      <div class="android-badge">
-        🤖 Requires <span data-config="MIN_ANDROID_VERSION">Android 8.0+</span>
-      </div>
-
-      <p class="download-note" style="margin-top:16px;">
-        All releases are available on
-        <a href="#" id="releases-link" data-href="GITHUB_RELEASES_URL" target="_blank" rel="noopener noreferrer">GitHub Releases ↗</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     FAQ
-     ============================================================ -->
-<section class="faq" id="faq" aria-labelledby="faq-heading">
-  <div class="container">
-    <div class="faq-header reveal">
-      <span class="section-label">Questions</span>
-      <h2 class="section-title" id="faq-heading">Frequently asked <span class="gradient-text">questions</span></h2>
-    </div>
-
-    <div class="faq-list" role="list">
-
-      <div class="faq-item reveal" role="listitem">
-        <button class="faq-question" aria-expanded="false" id="faq-q1" aria-controls="faq-a1">
-          Is FitCircle free?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
-          <p class="faq-answer-inner">Yes — FitCircle is completely free to download and use. There are no subscriptions, no hidden fees, and no premium tiers in V1.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal" role="listitem">
-        <button class="faq-question" aria-expanded="false" id="faq-q2" aria-controls="faq-a2">
-          Which Android version is required?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
-          <p class="faq-answer-inner">FitCircle requires Android 8.0 (Oreo) or later. This covers the vast majority of modern Android devices. iOS support is planned for a future release.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal" role="listitem">
-        <button class="faq-question" aria-expanded="false" id="faq-q3" aria-controls="faq-a3">
-          How does the Overtake System work?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
-          <p class="faq-answer-inner">FitCircle looks at your position on the family leaderboard and finds the person directly above you. It then calculates the exact number of extra steps you need to walk to overtake them — down to the single step. This number updates in real time as both you and your family member walk.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal" role="listitem">
-        <button class="faq-question" aria-expanded="false" id="faq-q4" aria-controls="faq-a4">
-          How do I add my family members?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
-          <p class="faq-answer-inner">When you create a family circle, FitCircle generates a unique family code like FIT-7K92X. Share this code with your family members. They enter the code in the app and instantly join your circle. You can see everyone's steps and ranking on the shared leaderboard.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal" role="listitem">
-        <button class="faq-question" aria-expanded="false" id="faq-q5" aria-controls="faq-a5">
-          Does it track steps automatically?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
-          <p class="faq-answer-inner">Yes. FitCircle uses the Android step counter sensor to track your steps automatically in the background. If your device doesn't support automatic tracking or you deny the permission, you can manually add steps any time.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal" role="listitem">
-        <button class="faq-question" aria-expanded="false" id="faq-q6" aria-controls="faq-a6">
-          Is my data private?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6">
-          <p class="faq-answer-inner">Your fitness data is only visible to members of your family circle. FitCircle uses Supabase Row Level Security to enforce this at the database level — it is not just frontend filtering. Workout notes are always private. No data is shared publicly. See our <a href="privacy.html" style="color:var(--purple-light)">Privacy Policy</a> for full details.</p>
-        </div>
-      </div>
-
-      <div class="faq-item reveal" role="listitem">
-        <button class="faq-question" aria-expanded="false" id="faq-q7" aria-controls="faq-a7">
-          Where can I find the source code?
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" id="faq-a7" role="region" aria-labelledby="faq-q7">
-          <p class="faq-answer-inner">FitCircle is open source. The complete source code — Flutter app, website, Supabase SQL and all documentation — is available on <a href="#" data-href="GITHUB_REPOSITORY_URL" target="_blank" rel="noopener noreferrer" style="color:var(--purple-light)">GitHub ↗</a>.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid">
-
-      <div class="footer-brand">
-        <a href="#hero" class="nav-logo" aria-label="FitCircle home">
-          <div class="nav-logo-icon" aria-hidden="true">🏃</div>
-          <span class="gradient-text">FitCircle</span>
-        </a>
-        <p>A family fitness app that makes walking a friendly competition. Track steps, climb the leaderboard and stay active together.</p>
-      </div>
-
-      <nav class="footer-col" aria-label="App links">
-        <p class="footer-col-title">App</p>
-        <ul>
-          <li><a href="#download">Download APK</a></li>
-          <li><a href="#" data-href="GITHUB_RELEASES_URL" target="_blank" rel="noopener noreferrer">All Releases</a></li>
-          <li><a href="#how-it-works">How to Install</a></li>
-        </ul>
-      </nav>
-
-      <nav class="footer-col" aria-label="Project links">
-        <p class="footer-col-title">Project</p>
-        <ul>
-          <li><a href="#" data-href="GITHUB_REPOSITORY_URL" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav>
-
-      <nav class="footer-col" aria-label="Legal links">
-        <p class="footer-col-title">Legal</p>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="#faq">Contact</a></li>
-        </ul>
-      </nav>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 FitCircle · Built with Flutter &amp; Supabase · v<span data-config="APP_VERSION">1.0.0</span></p>
-      <div class="footer-bottom-links">
-        <a href="#" data-href="GITHUB_REPOSITORY_URL" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="#download">Download</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Scripts — config MUST load before main -->
 <script src="js/config.js"></script>
 <script src="js/main.js"></script>
 </body>
